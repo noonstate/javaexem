@@ -2,7 +2,7 @@ package stat;
 
 import java.util.Random;
 
-public class EnemySkill implements Skill {
+public class EnemySkill extends Enemy implements Skill {
 	Random rd = new Random();
 	private int demege;
 
