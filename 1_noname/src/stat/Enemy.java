@@ -1,12 +1,13 @@
 package stat;
 
-public class Enemy extends EnemySkill{
+public class Enemy {
 
 	private int enemyNumber;
 	private int enemyHp;
 	private int enemySpeed;
 //	private int enemyExp;
 
+	
 	public Enemy(int enemyNumber) {
 		switch (enemyNumber) {
 		case 1:
