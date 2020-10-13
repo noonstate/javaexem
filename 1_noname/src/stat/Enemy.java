@@ -1,12 +1,13 @@
 package stat;
 
-public class Enemy extends EnemySkill{
+public class Enemy implements Skill {
 
-	private int enemyNumber;
+	protected int enemyNumber;
 	private int enemyHp;
 	private int enemySpeed;
 //	private int enemyExp;
 
+	
 	public Enemy(int enemyNumber) {
 		switch (enemyNumber) {
 		case 1:
@@ -25,6 +26,23 @@ public class Enemy extends EnemySkill{
 			this.enemySpeed = 0;
 			break;
 		}
+	}
+
+	public int skill_1(int hp) {
+		
+		return hp;
+	}
+
+	public int skill_2(int hp) {
+		return 0;
+	}
+
+	public int skill_3(int hp) {
+		return 0;
+	}
+
+	public int skill_4(int hp) {
+		return 0;
 	}
 
 	public int getEnemyHp() {

@@ -13,6 +13,7 @@ public class PlayerSkill implements Skill {
 	public int skill_1(int hp) {
 		if (rd.nextInt(99) + 1 >= 70)
 			setDemege(3 + (rd.nextInt(2) + 1) + (rd.nextInt(1) + 1)); // 크리티컬
+			
 		else
 			setDemege(3 + (rd.nextInt(2) + 1)); //일반
 		return hp - getDemege();
